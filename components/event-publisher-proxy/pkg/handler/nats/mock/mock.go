@@ -135,7 +135,7 @@ func (m *NatsHandlerMock) GetNatsConfig() *env.NatsConfig {
 // WithSubscription returns NatsHandlerMockOpt which sets the subscribed.Processor for the given NatsHandlerMock.
 func WithSubscription(scheme *runtime.Scheme, subscription *eventingv1alpha1.Subscription, eventTypePrefix string) NatsHandlerMockOpt {
 	return func(m *NatsHandlerMock) {
-		m.natsConfig.LegacyEventTypePrefix = eventTypePrefix
+		m.natsConfig.EventTypePrefix = eventTypePrefix
 		dynamicTestClient := dynamicfake.NewSimpleDynamicClient(scheme, subscription)
 		dFilteredSharedInfFactory := dynamicinformer.NewFilteredDynamicSharedInformerFactory(dynamicTestClient, 10*time.Second, v1.NamespaceAll, nil)
 		genericInf := dFilteredSharedInfFactory.ForResource(subscribed.GVR)
@@ -165,6 +165,6 @@ func newNatsConfig(port int) *env.NatsConfig {
 	return &env.NatsConfig{
 		Port:                  port,
 		LegacyNamespace:       testingutils.MessagingNamespace,
-		LegacyEventTypePrefix: testingutils.MessagingEventTypePrefix,
+		EventTypePrefix: testingutils.MessagingEventTypePrefix,
 	}
 }

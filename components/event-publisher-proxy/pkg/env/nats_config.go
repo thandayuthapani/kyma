@@ -21,14 +21,14 @@ type NatsConfig struct {
 	LegacyNamespace string `envconfig:"LEGACY_NAMESPACE" default:"kyma"`
 	// LegacyEventTypePrefix is the prefix of each event as per the eventing specification, used for legacy events
 	// It follows the eventType format: <LegacyEventTypePrefix>.<appName>.<event-name>.<version>
-	LegacyEventTypePrefix string `envconfig:"LEGACY_EVENT_TYPE_PREFIX" default:"kyma"`
+	EventTypePrefix string `envconfig:"EVENT_TYPE_PREFIX" default:"kyma"`
 }
 
 // ToConfig converts to a default BEB BebConfig
 func (c *NatsConfig) ToConfig() *BebConfig {
 	cfg := &BebConfig{
 		BEBNamespace:    c.LegacyNamespace,
-		EventTypePrefix: c.LegacyEventTypePrefix,
+		EventTypePrefix: c.EventTypePrefix,
 	}
 	return cfg
 }
