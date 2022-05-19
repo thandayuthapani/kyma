@@ -157,10 +157,10 @@ github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMn
 github.com/cilium/ebpf v0.0.0-20200110133405-4032b1d8aae3/go.mod h1:MA5e5Lr8slmEg9bt0VpxxWqJlO4iwu3FBdHUzV7wQVg=
 github.com/clbanning/x2j v0.0.0-20191024224557-825249438eec/go.mod h1:jMjuTZXRI4dUb/I5gc9Hdhagfvm9+RyrPryS/auMzxE=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
-github.com/cloudevents/sdk-go/protocol/nats/v2 v2.9.0 h1:3d1z9UQer8v2KLxRba3tNd7M5x9Te7g9g9ZLqdzfpVc=
-github.com/cloudevents/sdk-go/protocol/nats/v2 v2.9.0/go.mod h1:QJzS5Pw2lWu22wJfrq43o90Nj7xr9H8JDbd+T3IpwCE=
-github.com/cloudevents/sdk-go/v2 v2.9.0 h1:StQ9q2JuGvclGFoT7kpTdQm+qjW0LQzg51CgUF4ncpY=
-github.com/cloudevents/sdk-go/v2 v2.9.0/go.mod h1:GpCBmUj7DIRiDhVvsK5d6WCbgTWs8DxAWTRtAwQmIXs=
+github.com/cloudevents/sdk-go/protocol/nats/v2 v2.10.0 h1:pFHVT5IYlsGvpAjExh+wu0Cn4Q1ErljpVViJfsyNAj8=
+github.com/cloudevents/sdk-go/protocol/nats/v2 v2.10.0/go.mod h1:YImkWPX88pBfCulSbtmo40JQCYmMVufOVPlVKL4IaXY=
+github.com/cloudevents/sdk-go/v2 v2.10.0 h1:sz0pbNBGh1iRspqLGe/2cXhDghZZpvNPHwKPucVbh+8=
+github.com/cloudevents/sdk-go/v2 v2.10.0/go.mod h1:GpCBmUj7DIRiDhVvsK5d6WCbgTWs8DxAWTRtAwQmIXs=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/cncf/udpa/go v0.0.0-20200629203442-efcf912fb354/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
 github.com/cncf/udpa/go v0.0.0-20201120205902-5459f2c99403/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
@@ -576,12 +576,8 @@ github.com/kubernetes-sigs/go-open-service-broker-client v0.0.0-20200527163240-4
 github.com/kubernetes-sigs/service-catalog v0.3.1/go.mod h1:MUAf+rdT06kiNpLXRAIqtPHC3Kgkw63YziVj1VMu3HM=
 github.com/kyma-incubator/api-gateway v0.0.0-20220318061314-9fd030a8cbd1 h1:HUlDBauoIaryCAvnpsjRz6z62WFkGxt+ar/Lais0jf0=
 github.com/kyma-incubator/api-gateway v0.0.0-20220318061314-9fd030a8cbd1/go.mod h1:2UUHTqQkCTzi+og/+EV6lPKxFAnKl36ogWCQOxDIVUg=
-github.com/kyma-project/kyma/common/logging v0.0.0-20220505104927-1bd0c8a0777d h1:wp2Q+sT3VFL6d3CCc5rfwdeNDG/6mJEtiX/+IySMOJo=
-github.com/kyma-project/kyma/common/logging v0.0.0-20220505104927-1bd0c8a0777d/go.mod h1:7FWH0Lyls2xumj836aa+LVP8jhnJSv6wSlxC+2HAJ1s=
 github.com/kyma-project/kyma/common/logging v0.0.0-20220506151527-6c74f7543a36 h1:4o61dyOvAKXBsuC1KZfLIihnqZrR4/uE6RKfzrreirE=
 github.com/kyma-project/kyma/common/logging v0.0.0-20220506151527-6c74f7543a36/go.mod h1:7FWH0Lyls2xumj836aa+LVP8jhnJSv6wSlxC+2HAJ1s=
-github.com/kyma-project/kyma/components/application-operator v0.0.0-20220505114327-5bacf9bfadd4 h1:1XAjuJeuEU/mo2sYQmXMzNtFWwy6e8efZmotl4rL4HE=
-github.com/kyma-project/kyma/components/application-operator v0.0.0-20220505114327-5bacf9bfadd4/go.mod h1:9pe+mc3dOScffwfL6J24kQcU5CGZwGyl4zNm1YlRJbQ=
 github.com/kyma-project/kyma/components/application-operator v0.0.0-20220506151527-6c74f7543a36 h1:q+k+IqovbfaDXTIoxt+26RtcXwF/Ti7uuotySq3xfqM=
 github.com/kyma-project/kyma/components/application-operator v0.0.0-20220506151527-6c74f7543a36/go.mod h1:9pe+mc3dOScffwfL6J24kQcU5CGZwGyl4zNm1YlRJbQ=
 github.com/lann/builder v0.0.0-20180802200727-47ae307949d0/go.mod h1:dXGbAdH5GtBTC4WfIxhKZfyBF/HBFgRZSWwZ9g/He9o=
